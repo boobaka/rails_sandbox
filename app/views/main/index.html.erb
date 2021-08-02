@@ -1,0 +1,21 @@
+<h1>Table of all people</h1>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>Date Of Birth</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+    <tr>
+      <td><%= person.name %></td>
+      <td><%= person.dob %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
