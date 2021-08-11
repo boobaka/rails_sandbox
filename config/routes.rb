@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'main#index'
+  # get '/exam', to: 'main#exam'
+  # post '/exam', to: 'main#create'
+  get '/exam', to: 'main#exam'
+  post '/exam', to: 'main#create'
 end

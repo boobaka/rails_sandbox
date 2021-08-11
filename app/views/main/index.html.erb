@@ -1,0 +1,10 @@
+<br>
+<br>
+<br>
+<br>
+
+<%= form_tag '/exam' do %>
+  <%= check_box_tag("tables[]", value = "1", checked = true) %> 1
+  <%= check_box_tag("tables[]", value = "2", checked = true) %> 2
+  <%= submit_tag("Save changes") %>
+<% end %>
