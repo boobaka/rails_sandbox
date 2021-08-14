@@ -16,5 +16,17 @@
 
 
  body {
-    background-color: lightblue;
+    background-color: rgb(226, 231, 205);
   }
+
+input {
+  margin: 1em;
+}
+
+input#error {
+  border: 4px solid red;
+}
+
+input#success {
+  border: 4px solid rgb(92, 184, 74);
+}
