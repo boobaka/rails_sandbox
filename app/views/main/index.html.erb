@@ -1,0 +1,13 @@
+<h1>Index page</h1>
+
+<%= flash.inspect %>
+
+
+<br>
+<% if Current.user %>
+  <h1>Hello user <%= Current.user.email %></h1>
+<% end %>
+
+
+<br>
+<%= button_to 'Log out', logout_path, method: :delete %>
